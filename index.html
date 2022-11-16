@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-center mt-5">
+        <h1 class="display-4">survey test</h1>
+        <h2 class="dislay-1 lead text-muted mb-3">your opinion</h2>
+        <ul class="nav nav-tabs nav-fill" role="tablist">
+          <li class="nav-item">
+            <button
+              type="button"
+              role="tab"
+              data-bs-target="#tab1"
+              data-bs-toggle="tab"
+              class="nav-link active"
+            >
+              <p class="h2">step 1</p>
+              <p class="h4 lead">personal info</p>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button
+              type="button"
+              role="tab"
+              data-bs-target="#tab2"
+              data-bs-toggle="tab"
+              class="nav-link"
+            >
+              <p class="h2">step 2</p>
+              <p class="h4 lead">Questions series 1</p>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button
+              type="button"
+              role="tab"
+              data-bs-target="#tab3"
+              data-bs-toggle="tab"
+              class="nav-link"
+            >
+              <p class="h2">step 3</p>
+              <p class="h4 lead">Question series 2</p>
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade show active" role="tabpanel" id="tab1">
+            <div class="row">
+              <div
+                class="col-lg-3 mt-3 d-flex flex-column justify-content-start"
+              >
+                <label
+                  for="sex-type "
+                  class="form-label align-self-start ms-2 fs-5"
+                  >Sex:</label
+                >
+                <div class="ms-3 fs-6" id="sex-type">
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      id="sex-male"
+                      class="form-check-input"
+                      name="gender-input"
+                    />
+                    <label for="sex-male" class="form-check-label me-4"
+                      >Male</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      id="sex-female"
+                      class="form-check-input"
+                      name="gender-input"
+                    />
+                    <label for="sex-female" class="form-check-label"
+                      >Female</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mt-3 d-flex flex-column">
+                <label for="age-label" class="form-label align-self-start fs-5"
+                  >Age:</label
+                >
+                <input
+                  type="text"
+                  id="age-label"
+                  placeholder="Age"
+                  class="form-control p-2"
+                />
+              </div>
+              <div class="col-lg-6 mt-3 d-flex flex-column">
+                <label for="age-label" class="form-label align-self-start fs-5"
+                  >Phone:</label
+                >
+                <input
+                  type="text"
+                  id="age-label"
+                  placeholder="Phone"
+                  class="form-control p-2"
+                />
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-lg-6 d-flex flex-column">
+                <label
+                  for="name-input"
+                  class="form-label align-self-start fs-5"
+                >
+                  Name
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="firstname"
+                />
+              </div>
+              <div class="col-lg-6 d-flex flex-column">
+                <label
+                  for="name-input"
+                  class="form-label align-self-start fs-5"
+                >
+                  Email:
+                </label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="example@domain.com"
+                />
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-lg-8 d-flex flex-column">
+                <label
+                  for="name-input"
+                  class="form-label align-self-start fs-5"
+                >
+                  Address
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="123 st,city"
+                />
+              </div>
+              <div class="col-lg-4 d-flex flex-column">
+                <label
+                  for="form-region-number"
+                  class="form-label align-self-start fs-5"
+                >
+                  Regional number:
+                </label>
+                <input
+                  type="text"
+                  id="form-region-number"
+                  class="form-control"
+                  placeholder="123"
+                />
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-lg-6 d-flex flex-column">
+                <label for="form-city" class="form-label align-self-start fs-5">
+                  City:
+                </label>
+                <input
+                  type="text"
+                  id="form-city"
+                  class="form-control"
+                  placeholder="City"
+                />
+              </div>
+              <div class="col-lg-2 col-12 d-flex flex-column">
+                <label
+                  for="form-zip-code"
+                  class="form-label align-self-start fs-5"
+                >
+                  Zip Code:
+                </label>
+                <input
+                  type="number"
+                  id="form-zip-code"
+                  class="form-control"
+                  placeholder="123"
+                />
+              </div>
+              <div class="col-lg-4 col-12 d-flex flex-column">
+                <label
+                  for="form-country"
+                  class="form-label align-self-start fs-5"
+                >
+                  Country:
+                </label>
+                <select id="form-country" class="form-select">
+                  <option value="">-country-</option>
+                  <option value="iran">Iran</option>
+                  <option value="afghanestan">Afghanestan</option>
+                  <option value="iraq">Iraq</option>
+                  <option value="turkey">Turkey</option>
+                </select>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <button
+                class="btn btn-outline-secondary col-12 col-lg-1 ms-auto mt-5"
+              >
+                next step
+              </button>
+            </div>
+          </div>
+          <div class="tab-pane fade" role="tabpanel" id="tab2">
+            <h4 class="text-center mt-4">Q1:what is in the picture?</h4>
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <img src="./img/1600x900.png" alt="" class="rounded w-100" />
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="mt-3 ms-3">
+                  <div class="form-check">
+                    <input
+                      type="radio"
+                      name="questions"
+                      id="q1"
+                      class="form-check-input"
+                    />
+                    <label for="q1" class="form-check-label w-100 text-start"
+                      >horse</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="radio"
+                      name="questions"
+                      id="q2"
+                      class="form-check-input"
+                    />
+                    <label for="q2" class="form-check-label w-100 text-start"
+                      >dog</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="radio"
+                      name="questions"
+                      id="q3"
+                      class="form-check-input"
+                    />
+                    <label for="q3" class="form-check-label w-100 text-start"
+                      >house</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="radio"
+                      name="questions"
+                      id="q4"
+                      class="form-check-input"
+                    />
+                    <label for="q4" class="form-check-label w-100 text-start"
+                      >human</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="mt-5" />
+            <h4 class="text-center mt-4">
+              Q2:what is your opinion about this picture?
+            </h4>
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <img src="./img/1600x900.png" alt="" class="rounded w-100" />
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="mt-3 ms-3">
+                  <div class="form-check">
+                    <input
+                      type="radio"
+                      name="questions"
+                      id="q1"
+                      class="form-check-input"
+                    />
+                    <label for="q1" class="form-check-label w-100 text-start"
+                      >great</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="radio"
+                      name="questions"
+                      id="q2"
+                      class="form-check-input"
+                    />
+                    <label for="q2" class="form-check-label w-100 text-start"
+                      >good</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="radio"
+                      name="questions"
+                      id="q3"
+                      class="form-check-input"
+                    />
+                    <label for="q3" class="form-check-label w-100 text-start"
+                      >bad</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="radio"
+                      name="questions"
+                      id="q4"
+                      class="form-check-input"
+                    />
+                    <label for="q4" class="form-check-label w-100 text-start"
+                      >no opinion</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="mt-5" />
+            <h4 class="text-center mt-4">
+              Q3:How would you describe the situation of your country?
+            </h4>
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <img src="./img/1600x900.png" alt="" class="rounded w-100" />
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="mt-3 ms-3">
+                  <div class="form-check">
+                    <input
+                      type="radio"
+                      name="questions"
+                      id="q1"
+                      class="form-check-input"
+                    />
+                    <label for="q1" class="form-check-label w-100 text-start"
+                      >great</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="radio"
+                      name="questions"
+                      id="q2"
+                      class="form-check-input"
+                    />
+                    <label for="q2" class="form-check-label w-100 text-start"
+                      >bad</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="radio"
+                      name="questions"
+                      id="q3"
+                      class="form-check-input"
+                    />
+                    <label for="q3" class="form-check-label w-100 text-start"
+                      >normal</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="radio"
+                      name="questions"
+                      id="q4"
+                      class="form-check-input"
+                    />
+                    <label for="q4" class="form-check-label w-100 text-start"
+                      >no opinion</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="mt-5" />
+            <h4 class="text-center mt-4">Q4:what is in the picture?</h4>
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <img src="./img/1600x900.png" alt="" class="rounded w-100" />
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="mt-3 ms-3">
+                  <div class="form-check">
+                    <input
+                      type="radio"
+                      name="questions"
+                      id="q1"
+                      class="form-check-input"
+                    />
+                    <label for="q1" class="form-check-label w-100 text-start"
+                      >horse</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="radio"
+                      name="questions"
+                      id="q2"
+                      class="form-check-input"
+                    />
+                    <label for="q2" class="form-check-label w-100 text-start"
+                      >dog</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="radio"
+                      name="questions"
+                      id="q3"
+                      class="form-check-input"
+                    />
+                    <label for="q3" class="form-check-label w-100 text-start"
+                      >house</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="radio"
+                      name="questions"
+                      id="q4"
+                      class="form-check-input"
+                    />
+                    <label for="q4" class="form-check-label w-100 text-start"
+                      >human</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-5 mt-5">
+              <button class="btn btn-outline-secondary col-12 col-lg-1 ms-auto">
+                step 3
+              </button>
+            </div>
+          </div>
+          <div class="tab-pane fade" role="tabpanel" id="tab3">
+            <div class="row mt-5">
+              <div class="col-12 col-lg-6 text-start">
+                <h4 class="mb-3">question 5: Lorem ipsum dolor sit?</h4>
+                <p class="text-muted">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+                  iste molestias? Dignissimos autem quia in labore vitae neque
+                  adipisci odit!
+                </p>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="d-flex justify-content-between">
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      id="q5-1"
+                      name="q5"
+                      class="form-check-input"
+                    />
+                    <label for="q5-1" class="form-check-label">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      id="q5-2"
+                      name="q5"
+                      class="form-check-input"
+                    />
+                    <label for="q5-2" class="form-check-label">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      id="q5-3"
+                      name="q5"
+                      class="form-check-input"
+                    />
+                    <label for="q5-3" class="form-check-label">3</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      id="q5-4"
+                      name="q5"
+                      class="form-check-input"
+                    />
+                    <label for="q5-4" class="form-check-label">4</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      id="q5-5"
+                      name="q5"
+                      class="form-check-input"
+                    />
+                    <label for="q5-5" class="form-check-label">n/a</label>
+                  </div>
+                </div>
+                <textarea
+                  name="comment1"
+                  id="comment1"
+                  class="w-100 mt-3 form-control"
+                  cols="30"
+                  placeholder="comment here"
+                  rows="3"
+                ></textarea>
+              </div>
+              <hr class="mt-5" />
+            </div>
+            <div class="row mt-5">
+              <div class="col-12 col-lg-6 text-start">
+                <h4 class="mb-3">question 6: Lorem ipsum dolor sit?</h4>
+                <p class="text-muted">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+                  iste molestias? Dignissimos autem quia in labore vitae neque
+                  adipisci odit!
+                </p>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="d-flex justify-content-between">
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      id="q6-1"
+                      name="q6"
+                      class="form-check-input"
+                    />
+                    <label for="q6-1" class="form-check-label">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      id="q6-2"
+                      name="q6"
+                      class="form-check-input"
+                    />
+                    <label for="q6-2" class="form-check-label">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      id="q6-3"
+                      name="q6"
+                      class="form-check-input"
+                    />
+                    <label for="q6-3" class="form-check-label">3</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      id="q6-4"
+                      name="q6"
+                      class="form-check-input"
+                    />
+                    <label for="q6-4" class="form-check-label">4</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      type="radio"
+                      id="q6-5"
+                      name="q6"
+                      class="form-check-input"
+                    />
+                    <label for="q6-5" class="form-check-label">n/a</label>
+                  </div>
+                </div>
+                <textarea
+                  name="comment1"
+                  id="comment1"
+                  class="w-100 mt-3 form-control"
+                  cols="30"
+                  placeholder="comment here"
+                  rows="3"
+                ></textarea>
+              </div>
+              <hr class="mt-5" />
+            </div>
+            <div class="row mt-5">
+              <div class="col-12 col-lg-6 text-start">
+                <h4 class="mb-3">question 7: Lorem ipsum dolor sit?</h4>
+                <p class="text-muted">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+                  iste molestias? Dignissimos autem quia in labore vitae neque
+                  adipisci odit!
+                </p>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="d-flex">
+                  <div class="btn-group btn-group-lg w-100">
+                    <input type="radio" id="q7-1" name="q7" class="btn-check" />
+                    <label for="q7-1" class="btn btn-outline-secondary"
+                      >1</label
+                    >
+
+                    <input type="radio" id="q7-2" name="q7" class="btn-check" />
+                    <label for="q7-2" class="btn btn-outline-secondary"
+                      >2</label
+                    >
+
+                    <input type="radio" id="q7-3" name="q7" class="btn-check" />
+                    <label for="q7-3" class="btn btn-outline-secondary"
+                      >3</label
+                    >
+
+                    <input type="radio" id="q7-4" name="q7" class="btn-check" />
+                    <label for="q7-4" class="btn btn-outline-secondary"
+                      >4</label
+                    >
+
+                    <input type="radio" id="q7-5" name="q7" class="btn-check" />
+                    <label for="q7-5" class="btn btn-outline-secondary"
+                      >n/a</label
+                    >
+                  </div>
+                </div>
+                <textarea
+                  name="comment1"
+                  id="comment1"
+                  class="w-100 mt-3 form-control"
+                  cols="30"
+                  placeholder="comment here"
+                  rows="3"
+                ></textarea>
+              </div>
+              <hr class="mt-5" />
+            </div>
+            <div class="row mt-5">
+              <div class="col-12 col-lg-6 text-start">
+                <h4 class="mb-3">question 7: Lorem ipsum dolor sit?</h4>
+                <p class="text-muted">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+                  iste molestias? Dignissimos autem quia in labore vitae neque
+                  adipisci odit!
+                </p>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="d-flex">
+                  <div class="btn-group btn-group-lg w-100">
+                    <input type="radio" id="q7-1" name="q7" class="btn-check" />
+                    <label for="q7-1" class="btn btn-outline-secondary"
+                      >1</label
+                    >
+
+                    <input type="radio" id="q7-2" name="q7" class="btn-check" />
+                    <label for="q7-2" class="btn btn-outline-secondary"
+                      >2</label
+                    >
+
+                    <input type="radio" id="q7-3" name="q7" class="btn-check" />
+                    <label for="q7-3" class="btn btn-outline-secondary"
+                      >3</label
+                    >
+
+                    <input type="radio" id="q7-4" name="q7" class="btn-check" />
+                    <label for="q7-4" class="btn btn-outline-secondary"
+                      >4</label
+                    >
+
+                    <input type="radio" id="q7-5" name="q7" class="btn-check" />
+                    <label for="q7-5" class="btn btn-outline-secondary"
+                      >n/a</label
+                    >
+                  </div>
+                </div>
+                <textarea
+                  name="comment1"
+                  id="comment1"
+                  class="w-100 mt-3 form-control"
+                  cols="30"
+                  placeholder="comment here"
+                  rows="3"
+                ></textarea>
+              </div>
+              <hr class="mt-5" />
+            </div>
+            <div class="row mt-5">
+              <div class="col-12 col-lg-6 text-start">
+                <h4 class="mb-3">question 7: Lorem ipsum dolor sit?</h4>
+                <p class="text-muted">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+                  iste molestias? Dignissimos autem quia in labore vitae neque
+                  adipisci odit!
+                </p>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="d-flex">
+                  <div class="btn-group btn-group-lg w-100">
+                    <input type="radio" id="q7-1" name="q7" class="btn-check" />
+                    <label for="q7-1" class="btn btn-outline-secondary"
+                      >1</label
+                    >
+
+                    <input type="radio" id="q7-2" name="q7" class="btn-check" />
+                    <label for="q7-2" class="btn btn-outline-secondary"
+                      >2</label
+                    >
+
+                    <input type="radio" id="q7-3" name="q7" class="btn-check" />
+                    <label for="q7-3" class="btn btn-outline-secondary"
+                      >3</label
+                    >
+
+                    <input type="radio" id="q7-4" name="q7" class="btn-check" />
+                    <label for="q7-4" class="btn btn-outline-secondary"
+                      >4</label
+                    >
+
+                    <input type="radio" id="q7-5" name="q7" class="btn-check" />
+                    <label for="q7-5" class="btn btn-outline-secondary"
+                      >n/a</label
+                    >
+                  </div>
+                </div>
+                <textarea
+                  name="comment1"
+                  id="comment1"
+                  class="w-100 mt-3 form-control"
+                  cols="30"
+                  placeholder="comment here"
+                  rows="3"
+                ></textarea>
+              </div>
+              <hr class="mt-5" />
+            </div>
+            <div class="row mb-4">
+              <button
+                type="button"
+                class="btn btn-outline-secondary col-12 col-lg-1 ms-auto"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
